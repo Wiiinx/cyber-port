@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Yue Wu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme--cyber">
+  <div class="background-effects" aria-hidden="true">
+    <div class="scanline"></div>
+    <div class="noise"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-core">Yue Wu</span>
+      <span class="brand-sub">Terminal</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-navigation" class="site-nav">
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="blog.html">Blog</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="my-life.html">My Life</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="hero-content">
+        <p class="hero-prompt">> ls missions/active</p>
+        <h1 class="hack-text" data-text="MISSION DECK">MISSION DECK</h1>
+        <p class="hero-subtitle">Highlighted builds that blend immersive interfaces, reliable services, and playful storytelling.</p>
+      </div>
+    </section>
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <span class="section-tag">// card view</span>
+      </header>
+      <div class="project-grid">
+        <article class="project-card">
+          <figure>
+            <img src="assets/images/chatRoom.png" alt="Wuni-Chat Server interface">
+          </figure>
+          <div class="project-body">
+            <h3>Wuni-Chat Server</h3>
+            <p>A MERN-powered real-time chat experience with authentication, chat rooms, and responsive UI built for community gathering.</p>
+            <div class="project-tags">
+              <span>MongoDB</span>
+              <span>Express</span>
+              <span>React</span>
+              <span>Node</span>
+            </div>
+            <a class="chip-link" href="https://wunichat.onrender.com/" target="_blank" rel="noreferrer">Launch Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <figure>
+            <img src="assets/images/face-recog.png" alt="Face recognition app interface">
+          </figure>
+          <div class="project-body">
+            <h3>Face Recognition Application</h3>
+            <p>Full-stack face detection web app leveraging Clarifai API, React UI, Node/Express server, and PostgreSQL persistence.</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a class="chip-link" href="https://wunichat.onrender.com/" target="_blank" rel="noreferrer">View Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <figure>
+            <img src="assets/images/AIMDcongestionavoidance.jpg" alt="Visualization of AIMD algorithm">
+          </figure>
+          <div class="project-body">
+            <h3>AIMD Algorithm Simulation</h3>
+            <p>Protocol lab visualizing Additive Increase Multiplicative Decrease for congestion control with rich documentation.</p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Networks</span>
+              <span>Systems</span>
+            </div>
+            <a class="chip-link" href="https://github.com/Wiiinx/Computer-Networks/tree/main/Assignments/Protocols%20%26%20AIMD/src" target="_blank" rel="noreferrer">View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <figure>
+            <img src="assets/images/rr.jpg" alt="Round Robin scheduler illustration">
+          </figure>
+          <div class="project-body">
+            <h3>Round Robin Scheduler</h3>
+            <p>Operating systems lab featuring CPU scheduling simulations, analytics, and CLI-first interactions.</p>
+            <div class="project-tags">
+              <span>C++</span>
+              <span>Algorithms</span>
+              <span>OS</span>
+            </div>
+            <a class="chip-link" href="https://github.com/Wiiinx/Round-Robin" target="_blank" rel="noreferrer">View Repository</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2025 Yue Wu · All rights reversed.</span>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

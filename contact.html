@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Yue Wu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme--cyber">
+  <div class="background-effects" aria-hidden="true">
+    <div class="scanline"></div>
+    <div class="noise"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-core">Yue Wu</span>
+      <span class="brand-sub">Terminal</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-navigation" class="site-nav">
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="my-life.html">My Life</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="hero-content">
+        <p class="hero-prompt">> ping yuewu@network</p>
+        <h1 class="hack-text" data-text="CONTACT RELAY">CONTACT</h1>
+        <p class="hero-subtitle">Open channels for collaborations, opportunities, and cyberpunk playlists.</p>
+      </div>
+    </section>
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Signal Points</h2>
+        <span class="section-tag">// reach out</span>
+      </header>
+      <div class="contact-grid">
+        <article class="terminal-card">
+          <h3>Email</h3>
+          <a class="chip-link" href="mailto:yw4705@nyu.edu">yw4705@nyu.edu</a>
+          <a class="chip-link" href="mailto:wuyue403@gmail.com">wuyue403@gmail.com</a>
+          
+        </article>
+        <article class="terminal-card">
+          <h3>Phone</h3>
+          <a class="chip-link" href="tel:+13472772558">+1 (347) 277-2558</a>
+          <a class="chip-link"">+86 18201823169</a>
+        </article>
+        <article class="terminal-card">
+          <h3>Location</h3>
+          <a class="chip-link">San Diego</a>
+          <a class="chip-link">New York</a>
+          <a class="chip-link">Shanghai</a>
+        </article>
+      </div>
+      <div class="map-frame">
+        <iframe title="Map of San Diego" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.972629976786!2d-117.2358455!3d32.880060899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf95e35ab1f09%3A0xe8f5b3c7f1d6cabd!2sUniversity%20of%20California%20San%20Diego!5e0!3m2!1sen!2sus!4v1713462050000!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Send a Secure Packet</h2>
+        <span class="section-tag">// mailto helper</span>
+      </header>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+        </div>
+        <label>
+          <span>Subject</span>
+          <input type="text" name="subject" required placeholder="Project idea, collaboration, etc.">
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" required placeholder="Let’s architect something remarkable..."></textarea>
+        </label>
+        <button class="neon-button primary" type="submit">Encrypt &amp; Send</button>
+        <p class="form-hint">This form opens your default email client with a pre-filled message for quick outreach.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2025 Yue Wu · All rights reversed.</span>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yue Wu | Terminal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme--cyber landing">
+  <div class="background-effects" aria-hidden="true">
+    <div class="scanline"></div>
+    <div class="noise"></div>
+    <div class="grid"></div>
+  </div>
+
+  <div class="splash-screen" id="splash-screen" aria-hidden="true">
+    <div class="splash-shell">
+      <p class="splash-label">// Loading...</p>
+      <div class="splash-loader">
+        <span class="splash-progress"></span>
+      </div>
+      <p class="splash-text">Establishing secure link...</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-core">Yue Wu</span>
+      <span class="brand-sub">Terminal</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-navigation" class="site-nav">
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="my-life.html">My Life</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page map-lab">
+    <section class="map-terminal">
+      <header class="map-header">
+        <div class="map-header__label">
+          <span class="map-tag">CYBER GRID</span>
+          <span class="map-tag map-tag--accent">ATLAS</span>
+        </div>
+        <div class="map-header__controls">
+          <div class="map-search" aria-hidden="true">
+            <ion-icon name="search-outline"></ion-icon>
+            <span>Search Nodes</span>
+          </div>
+          <div class="map-status-chip">Signal&nbsp;Stable</div>
+          <div class="map-icons" aria-hidden="true">
+            <ion-icon name="locate-outline"></ion-icon>
+            <ion-icon name="scan-outline"></ion-icon>
+            <ion-icon name="home-outline"></ion-icon>
+          </div>
+        </div>
+      </header>
+
+      <div class="map-canvas">
+        <svg class="map-svg" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="presentation">
+          <defs>
+            <linearGradient id="map-ocean" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#041029" />
+              <stop offset="100%" stop-color="#02070f" />
+            </linearGradient>
+            <linearGradient id="map-land" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0e1d33" />
+              <stop offset="100%" stop-color="#192840" />
+            </linearGradient>
+            <linearGradient id="map-river" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="rgba(0,255,249,0.12)" />
+              <stop offset="50%" stop-color="rgba(0,255,249,0.35)" />
+              <stop offset="100%" stop-color="rgba(0,255,249,0.12)" />
+            </linearGradient>
+          </defs>
+
+          <rect x="0" y="0" width="900" height="520" fill="url(#map-ocean)" opacity="0.95" />
+
+          <g class="map-grid">
+            <path d="M90 0v520" />
+            <path d="M180 0v520" />
+            <path d="M270 0v520" />
+            <path d="M360 0v520" />
+            <path d="M450 0v520" />
+            <path d="M540 0v520" />
+            <path d="M630 0v520" />
+            <path d="M720 0v520" />
+            <path d="M810 0v520" />
+            <path d="M0 80h900" />
+            <path d="M0 160h900" />
+            <path d="M0 240h900" />
+            <path d="M0 320h900" />
+            <path d="M0 400h900" />
+            <path d="M0 480h900" />
+          </g>
+
+          <g class="map-landmass">
+            <path d="M92 385 L174 178 L152 136 L268 122 L268 120 L305 124 L331 96 L352 110 L520 126 L566 146 L650 176 L660 226 L786 294 L598 315 L560 324 L502 310 L420 340 L400 362 L348 372 L298 386 L270 385 L146 366 Z" />
+            <path d="M450 412 L655 338 L662 334 L712 348 L768 368 L820 460 L754 450 L744 468 L640 442 L576 464 Z" />
+          </g>
+
+          <g class="map-routes">
+            <path class="map-arc" d="M210 210 Q 290 170 360 150" />
+            <path class="map-arc" d="M360 150 Q 440 180 530 210" />
+            <path class="map-arc" d="M530 210 Q 610 240 700 280" />
+            <path class="map-arc" d="M520 400 Q 610 410 700 380" />
+            <path class="map-arc" d="M210 210 Q 320 320 520 400" />
+            <path class="map-arc" d="M530 210 Q 520 310 520 400" />
+          </g>
+
+          <g class="map-nodes">
+            <a xlink:href="about.html" class="map-node">
+              <circle class="map-node-ring" cx="210" cy="210" r="22" />
+              <circle class="map-node-dot" cx="210" cy="210" r="15" />
+              <circle class="avatar-glow-ring" cx="210" cy="210" r="30" />
+              <text x="210" y="182">About</text>
+            </a>
+            <a xlink:href="resume.html" class="map-node">
+              <circle class="map-node-ring" cx="360" cy="150" r="22" />
+              <circle class="map-node-dot" cx="360" cy="150" r="15" />
+              <circle class="avatar-glow-ring" cx="360" cy="150" r="30" />
+              <text x="360" y="122">Resume</text>
+            </a>
+            <a xlink:href="projects.html" class="map-node">
+              <circle class="map-node-ring" cx="530" cy="210" r="22" />
+              <circle class="map-node-dot" cx="530" cy="210" r="15" />
+              <circle class="avatar-glow-ring" cx="530" cy="210" r="30" />
+              <text x="530" y="182">Projects</text>
+            </a>
+            <a xlink:href="blog.html" class="map-node">
+              <circle class="map-node-ring" cx="700" cy="280" r="22" />
+              <circle class="map-node-dot" cx="700" cy="280" r="15" />
+              <circle class="avatar-glow-ring" cx="700" cy="280" r="30" />
+              <text x="700" y="252">Blog</text>
+            </a>
+            <a xlink:href="my-life.html" class="map-node">
+              <circle class="map-node-ring" cx="520" cy="400" r="22" />
+              <circle class="map-node-dot" cx="520" cy="400" r="15" />
+              <circle class="avatar-glow-ring" cx="520" cy="400" r="30" />
+              <text x="520" y="372">My Life</text>
+            </a>
+            <a xlink:href="contact.html" class="map-node">
+              <circle class="map-node-ring" cx="700" cy="380" r="22" />
+              <circle class="map-node-dot" cx="700" cy="380" r="15" />
+              <circle class="avatar-glow-ring" cx="700" cy="380" r="30" />
+              <text x="700" y="352">Contact</text>
+            </a>
+          </g>
+        </svg>
+        <div class="map-scanline" aria-hidden="true"></div>
+        <div class="map-compass" aria-hidden="true">
+          <div class="compass-ring"></div>
+          <span class="compass-n">N</span>
+        </div>
+        <div class="map-corner map-corner--tl" aria-hidden="true"></div>
+        <div class="map-corner map-corner--tr" aria-hidden="true"></div>
+        <div class="map-corner map-corner--bl" aria-hidden="true"></div>
+        <div class="map-corner map-corner--br" aria-hidden="true"></div>
+        <div class="map-border" aria-hidden="true"></div>
+        
+      </div>
+
+      <footer class="map-console">
+        <div class="console-panel">
+          <span class="console-label">Loading</span>
+          <div class="console-bar" aria-hidden="true"><span style="width: 72%"></span></div>
+        </div>
+        <div class="console-core" aria-hidden="true">
+          <div class="console-core__ring">
+            <span>57%</span>
+          </div>
+          <p>Portfolio Sync</p>
+        </div>
+        <div class="console-panel console-panel--right">
+          <span class="console-label">Next Window</span>
+          <span>2026 New Grad Roles</span>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2025 Yue Wu · All rights reversed.</span>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

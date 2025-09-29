@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Yue Wu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme--cyber">
+  <div class="background-effects" aria-hidden="true">
+    <div class="scanline"></div>
+    <div class="noise"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-core">Yue Wu</span>
+      <span class="brand-sub">Terminal</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-navigation" class="site-nav">
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a class="active" href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="my-life.html">My Life</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="hero-content">
+        <p class="hero-prompt">> tail -f neural_feed.log</p>
+        <h1 class="hack-text" data-text="NEURAL BLOG">NEURAL BLOG</h1>
+        <p class="hero-subtitle">Notes, experiments, and observations from systems, design, and cyberpunk curiosities.</p>
+      </div>
+    </section>
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Latest Entries</h2>
+        <span class="section-tag">// local-first publishing</span>
+      </header>
+      <div class="blog-grid" id="blog-grid" data-blog></div>
+    </section>
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Post From Terminal</h2>
+        <span class="section-tag">// store in localStorage</span>
+      </header>
+      <form class="blog-form" id="blog-form">
+        <div class="form-row">
+          <label>
+            <span>Title</span>
+            <input type="text" name="title" required placeholder="e.g. Synthwave Rendering">
+          </label>
+          <label>
+            <span>Category</span>
+            <input type="text" name="category" required placeholder="e.g. CS Notes">
+          </label>
+          <label>
+            <span>Date</span>
+            <input type="date" name="date" required>
+          </label>
+        </div>
+        <label>
+          <span>Summary</span>
+          <textarea name="summary" rows="3" required placeholder="Key takeaways or teaser"></textarea>
+        </label>
+        <label>
+          <span>External Link (Notion, blog, etc.)</span>
+          <input type="url" name="link" placeholder="https://">
+        </label>
+        <label>
+          <span>Cover Image URL (optional)</span>
+          <input type="url" name="cover" placeholder="https://">
+        </label>
+        <button class="neon-button primary" type="submit">Publish Entry</button>
+        <p class="form-hint">Entries are stored in your browser&#39;s localStorage so you can draft without a backend. Delete or restore defaults via the panel below.</p>
+      </form>
+      <div class="blog-controls">
+        <button class="neon-button" data-action="clear-posts">Clear Custom Posts</button>
+        <button class="neon-button" data-action="restore-defaults">Restore Defaults</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2025 Yue Wu · All rights reversed.</span>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

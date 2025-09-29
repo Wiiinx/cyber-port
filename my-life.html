@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Life | Yue Wu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme--cyber">
+  <div class="background-effects" aria-hidden="true">
+    <div class="scanline"></div>
+    <div class="noise"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-core">Yue Wu</span>
+      <span class="brand-sub">Terminal</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-navigation" class="site-nav">
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" href="my-life.html">My Life</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="hero-content">
+        <p class="hero-prompt">Personal Journal</p>
+        <h1 class="hack-text" data-text="MOMENTS &amp; NOTES">MOMENTS &amp; NOTES</h1>
+        <p class="hero-subtitle">Photo stories and reflections organised by chapters: Fun, Life, and Travel.</p>
+        <p class="hero-description">
+          Update the <code>assets/mylife</code> folders whenever you want to share a new memory. Captions and thoughts can
+          be edited inside <code>assets/js/main.js</code> for more context.
+        </p>
+      </div>
+    </section>
+
+    <section class="life-collections" data-life>
+
+      <article class="life-collection" data-life-collection="life">
+        <header class="section-header">
+          <h2 class="section-title">Life</h2>
+          <span class="section-tag">// everyday reflections</span>
+        </header>
+        <div class="life-grid" data-life-grid="life"></div>
+      </article>
+
+
+
+      <article class="life-collection" data-life-collection="travel">
+        <header class="section-header">
+          <h2 class="section-title">Travel</h2>
+          <span class="section-tag">// journeys &amp; discoveries</span>
+        </header>
+        <div class="life-grid" data-life-grid="travel"></div>
+      </article>
+
+
+      <article class="life-collection" data-life-collection="fun">
+        <header class="section-header">
+          <h2 class="section-title">Fun</h2>
+          <span class="section-tag">// celebrations &amp; playful energy</span>
+        </header>
+        <div class="life-grid" data-life-grid="fun"></div>
+      </article>
+
+  
+
+    </section>
+
+
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Add A Memory</h2>
+        <span class="section-tag">// saved locally in this browser</span>
+      </header>
+      <form class="life-form" id="life-form">
+        <div class="form-row">
+          <label>
+            <span>Collection</span>
+            <select name="collection" required>
+              <option value="fun">Fun</option>
+              <option value="life">Life</option>
+              <option value="travel">Travel</option>
+            </select>
+          </label>
+          <label>
+            <span>Caption</span>
+            <input type="text" name="caption" placeholder="Title for this memory">
+          </label>
+        </div>
+        <label>
+          <span>Image URL or Path</span>
+          <input type="text" name="image" required placeholder="assets/mylife/fun/new-photo.jpg or https://...">
+        </label>
+        <label>
+          <span>Thoughts</span>
+          <textarea name="thought" rows="3" required placeholder="What made this moment special?"></textarea>
+        </label>
+        <button class="neon-button primary" type="submit">Save Entry</button>
+        <p class="form-hint">Add new files to the matching <code>assets/mylife</code> folder or reference a hosted URL. Entries stay private in localStorage.</p>
+      </form>
+      <div class="life-controls" data-life-controls>
+        <button class="neon-button" type="button" data-life-action="clear">Clear Custom Entries</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2025 Yue Wu · All rights reversed.</span>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

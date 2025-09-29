@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Yue Wu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme--cyber">
+  <div class="background-effects" aria-hidden="true">
+    <div class="scanline"></div>
+    <div class="noise"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-core">Yue Wu</span>
+      <span class="brand-sub">Terminal</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-navigation" class="site-nav">
+      <a href="about.html">About</a>
+      <a class="active" href="resume.html">Resume</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="my-life.html">My Life</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="hero-content">
+        <p class="hero-prompt">Resume</p>
+        <h1 class="hack-text" data-text="YUE (ELSIE) WU">YUE (ELSIE) WU</h1>
+        <p class="hero-subtitle">Software Engineer · UC San Diego MSCS (2026)</p>
+        <p class="hero-description">
+          Incoming PayPal software engineer intern with experience delivering AI-enabled developer tooling, financial
+          services platforms, and data-rich web applications.
+        </p>
+        <div class="hero-meta">
+          <span class="badge">New York, NY · San Diego, CA</span>
+          <span class="badge">yw4705@nyu.edu · +1 (347) 277-2558</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Education</h2>
+        <span class="section-tag">// academic background</span>
+      </header>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-meta">Sept 2024 — Jun 2026 (Expected)</div>
+          <div class="timeline-content">
+            <h3>University of California, San Diego</h3>
+            <p>Master of Science in Computer Science</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">Sept 2020 — May 2024</div>
+          <div class="timeline-content">
+            <h3>New York University</h3>
+            <p>Bachelor of Arts in Computer Science</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Professional Experience</h2>
+        <span class="section-tag">// internships &amp; impact</span>
+      </header>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-meta">Jun 2025 — Sept 2025</div>
+          <div class="timeline-content">
+            <h3>PayPal · Software Engineer Intern</h3>
+            <ul class="bullet-list">
+              <li>Co-designed and deployed a RAG chatbot across the developer center, indexing 700+ documents into a vector store for semantic search.</li>
+              <li>Implemented LangChain retrieval workflows with internal GPT-based models, raising response accuracy from 76% to 92%.</li>
+              <li>Shipped automation agents that translated, validated, and audited documentation, cutting update cycles from seven to three days.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">Jun 2024 — Aug 2024</div>
+          <div class="timeline-content">
+            <h3>GYFR · Software Engineer Intern</h3>
+            <ul class="bullet-list">
+              <li>Developed a Golang banking service with gRPC APIs, PostgreSQL, and Redis-backed workers for asynchronous processing.</li>
+              <li>Implemented 2FA using SMS one-time passwords and PASETO, strengthening account security controls.</li>
+              <li>Set up CI/CD with GitHub Actions, containerised the stack with Docker, and deployed on AWS EKS.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">Jun 2023 — Aug 2023</div>
+          <div class="timeline-content">
+            <h3>JD.com · Software Engineer Intern</h3>
+            <ul class="bullet-list">
+              <li>Built Spring Boot and Vue.js data visualisations used by 20+ logistics teams for operational decision making.</li>
+              <li>Designed RESTful APIs with MySQL persistence, optimising query performance through indexing and pooling.</li>
+              <li>Partnered with designers to deliver polished UI components, including configurable charts and search experiences.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Selected Projects</h2>
+        <span class="section-tag">// recent builds</span>
+      </header>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-meta">May 2024 — Jul 2024</div>
+          <div class="timeline-content">
+            <h3>GYM Application</h3>
+            <p>TypeScript · Firestore · Node.js · React</p>
+            <ul class="bullet-list">
+              <li>Designed RESTful APIs for membership management, training sessions, and Stripe-powered billing.</li>
+              <li>Delivered responsive React interfaces with reusable components and real-time Firebase data updates.</li>
+              <li>Achieved 90%+ code coverage using Jest and React Testing Library across client and server modules.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">Sept 2023 — Dec 2023</div>
+          <div class="timeline-content">
+            <h3>Face Recognition Web Application</h3>
+            <p>React · Node.js · Express · PostgreSQL</p>
+            <ul class="bullet-list">
+              <li>Implemented JWT-secured authentication and CRUD APIs for user profiles and submissions.</li>
+              <li>Integrated the Clarifai face-detection API to process user images with real-time updates.</li>
+              <li>Applied secure validation and password encryption workflows across the Node.js backend.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="terminal-section">
+      <header class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <span class="section-tag">// tools &amp; technologies</span>
+      </header>
+      <div class="skill-grid resume-skills">
+        <div class="skill-chip">Java</div>
+        <div class="skill-chip">Python</div>
+        <div class="skill-chip">C/C++</div>
+        <div class="skill-chip">TypeScript</div>
+        <div class="skill-chip">JavaScript</div>
+        <div class="skill-chip">Golang</div>
+        <div class="skill-chip">SQL</div>
+        <div class="skill-chip">Spring Cloud</div>
+        <div class="skill-chip">React</div>
+        <div class="skill-chip">Node.js</div>
+        <div class="skill-chip">Next.js</div>
+        <div class="skill-chip">Django</div>
+        <div class="skill-chip">Vue.js</div>
+        <div class="skill-chip">Express</div>
+        <div class="skill-chip">Flask</div>
+        <div class="skill-chip">Gin</div>
+        <div class="skill-chip">PostgreSQL</div>
+        <div class="skill-chip">Redis</div>
+        <div class="skill-chip">MongoDB</div>
+        <div class="skill-chip">MySQL</div>
+        <div class="skill-chip">AWS</div>
+        <div class="skill-chip">Git</div>
+        <div class="skill-chip">Kubernetes</div>
+      </div>
+    </section>
+    <a class="neon-button primary" href="assets/files/Elsie_Resume.pdf" download>
+          <ion-icon name="download-outline"></ion-icon>
+          <span>Download Resume (PDF)</span>
+        </a>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2025 Yue Wu · All rights reversed.</span>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
